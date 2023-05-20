@@ -1,7 +1,6 @@
 #include <stdio.h>
 /**
- * 4-puts - A program that prints
- * main - Entry point
+ * main - Print the "Programming is like building a multilingual puzzle
  *
  * Return: Always 0 (success)
  */
