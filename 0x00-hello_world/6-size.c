@@ -1,8 +1,8 @@
 #include <stdio.h>
 /**
-  * main - print size of types
+  * main - Print the sizof types
   *
-  * Return - Always Success (0)
+  * Return: Always Success (0)
   */
 int main(void)
 {
