@@ -10,7 +10,7 @@ int main(void)
 	int num;
 	char alpha;
 
-	for (num = 10; num < 20; num++)
+	for (num = 0; num < 10; num++)
 	{
 		printf("%d", num);
 	}
