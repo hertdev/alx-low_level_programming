@@ -14,5 +14,6 @@ int main(void)
 		printf("%c", low);
 		low++;
 	}
+	printf("\n");
 	return (0);
 }

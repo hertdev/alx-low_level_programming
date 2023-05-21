@@ -22,5 +22,6 @@ int main(void)
 		printf("%c", upperCase);
 		upperCase++;
 	}
+	printf("\n");
 	return (0);
 }
