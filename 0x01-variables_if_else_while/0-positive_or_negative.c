@@ -5,7 +5,7 @@
   * main - Program entry point
   * 0-positive_or_negative - Prints positive or negative numbers
   *
-  * @n: integer to assign random number
+  * @n - integer to assign random number
   *
   * Return: positive or negative number, else (1)
   */
