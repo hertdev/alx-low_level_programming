@@ -7,11 +7,11 @@
   */
 int main(void)
 {
-	char low = 'a';
+	int low = 'a';
 
 	while (low <= 'z')
 	{
-		printf("%c", low);
+		printf("%d", low);
 		low++;
 	}
 	return (0);
