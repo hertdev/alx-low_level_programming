@@ -11,9 +11,9 @@ int main(void)
 
 	while (low <= 'z')
 	{
-		putchar(low);
+		printf("%c", low);
 		low++;
 	}
-	putchar("\n");
+	printf("\n");
 	return (0);
 }
