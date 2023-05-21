@@ -12,11 +12,11 @@ int main(void)
 
 	for (num = 10; num < 20; num++)
 	{
-		putchar(num);
+		printf("%d", num);
 	}
 	for (alpha = 'a'; alpha <= 'f'; alpha++)
 	{
-		putchar(alpha);
+		printf("%c", alpha);
 	}
 	putchar('\n');
 	return (0);
