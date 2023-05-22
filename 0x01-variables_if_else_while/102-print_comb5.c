@@ -1,4 +1,4 @@
-i#include <stdio.h>
+#include <stdio.h>
 /**
   * main - Program entry point
   * 102-print_comb5 - print range of numbers
