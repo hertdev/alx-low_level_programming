@@ -8,24 +8,26 @@ int main(void)
 {
 	int i, j, k;
 
-	for (i = 0; i < 10; i++)
+	for (i = 48; i < 58; i++)
 	{
-		for (j = 1; j < 10; j++)
+		for (j = 49; j < 58; j++)
 		{
-			for (k = 2; k < 10; k++)
+			for (k = 50; k < 58; k++)
 			{
 				if (k > j && j > i)
 				{
-					printf("%d%d%d", i,j,k);
-					if (i != j && j != k && k != i)
+					putchar(i);
+					putchar(j);
+					putchar(k);
+					if (i != 55 || j != 56)
 					{
-						printf(",");
-						printf(" ");
+						printf(',');
+						printf(' ');
 					}
 				}
 			}
 		}
 	}
-	printf("\n");
+	printf('\n');
 	return (0);
 }
