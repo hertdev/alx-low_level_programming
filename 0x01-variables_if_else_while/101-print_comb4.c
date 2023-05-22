@@ -21,13 +21,13 @@ int main(void)
 					putchar(k);
 					if (i != 55 || j != 56)
 					{
-						printf(',');
-						printf(' ');
+						putchar(',');
+						putchar(' ');
 					}
 				}
 			}
 		}
 	}
-	printf('\n');
+	putchar('\n');
 	return (0);
 }
