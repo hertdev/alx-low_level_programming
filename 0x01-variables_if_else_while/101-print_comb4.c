@@ -8,17 +8,20 @@ int main(void)
 {
 	int i, j, k;
 
-	for (i = 0; i < 8; i++)
+	for (i = 0; i < 10; i++)
 	{
-		for (j = 1; j < 9; j++)
+		for (j = 1; j < 10; j++)
 		{
 			for (k = 2; k < 10; k++)
 			{
-				if ( i != j && j != k && i != k)
+				if (k > j && j > i)
 				{
 					printf("%d%d%d", i,j,k);
-					printf(",");
-					printf(" ");
+					if (i != j && j != k && k != i)
+					{
+						printf(",");
+						printf(" ");
+					}
 				}
 			}
 		}
