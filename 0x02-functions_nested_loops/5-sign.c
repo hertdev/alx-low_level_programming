@@ -23,5 +23,5 @@ int print_sign(int n)
 		return (-1);
 	}
 	else
-		return (NULL);
+		_putchar('error');
 }
