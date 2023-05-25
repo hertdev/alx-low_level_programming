@@ -7,7 +7,7 @@
   */
 int _abs(int n)
 {
-	if (n < 48)
+	if (n < 0)
 		n = n * (-48);
 	_putchar(n);
 	return (0);
