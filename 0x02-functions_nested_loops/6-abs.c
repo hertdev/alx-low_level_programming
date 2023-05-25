@@ -10,6 +10,5 @@
 int _abs(int n)
 {
 	int x = abs(n);
-	printf("%d", x);
-	return (1);
+	return (x);
 }
