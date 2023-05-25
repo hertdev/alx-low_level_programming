@@ -13,9 +13,22 @@ void times_table(void)
 		for (b = 0; b < 10; b++)
 		{
 			mul = a * b;
-			_putchar(mul);
-			_putchar(',');
-			_putchar(' ');
+			if (b == 0)
+				_putchar(mul);
+			if (mul < 10 && b != 0)
+			{
+				_putchar(mul + '0');
+				_putchar(',');
+				_putchar(' ');
+				_putchar(' ');
+			}
+			else if (mul >= 10)
+			{
+				_putchar((mul / 10) + '0');
+				_putchar((mul % 10) + '0');
+				_putchar(',');
+				_putchar(' ');
+			}
 		}
 		_putchar('\n');
 	}
