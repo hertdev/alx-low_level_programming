@@ -2,13 +2,13 @@
 
 /**
   * _abs - Prints the absolute value of an integer
-  * @int: Integer value to consider
+  * @n: Integer value to consider
   * Return: absolute value
   */
 int _abs(int n)
 {
-	if (n < 0)
-		n = n * (-1);
+	if (n < 48)
+		n = n * (-48);
 	_putchar(n);
 	return (0);
 }
