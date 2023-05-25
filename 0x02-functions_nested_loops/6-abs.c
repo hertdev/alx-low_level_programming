@@ -1,4 +1,5 @@
 #include <stdlib.h>
+#include <stdio.h>
 #include "main.h"
 
 /**
@@ -9,6 +10,6 @@
 int _abs(int n)
 {
 	int x = abs(n);
-	_putchar(x);
+	printf("%d\n", x);
 	return (0);
 }
