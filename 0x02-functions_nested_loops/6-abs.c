@@ -5,10 +5,8 @@
   * @int: Integer value to consider
   * Return: absolute value
   */
-int _abs(int)
+int _abs(int n)
 {
-	int n;
-
 	if (n < 0)
 		n = n * (-1);
 	_putchar(n);
