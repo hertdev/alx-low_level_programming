@@ -8,13 +8,26 @@
   */
 int _atoi(char *s)
 {
-	int num = 0;
+	int i, neg, result;
+	short boolean;
 
-	for (int i = 0; s[i] != '\0'; i++)
+	i = neg = result = boolean = 0;
+	neg = -1;
+
+	while (s[i] != '\0')
 	{
-		num = num * 10 + (s[i] - 48);
-		_putchar(num);
+		if (s[i] == '-')
+			neg = neg * -1;
+		if (s[i] >= '0' && s[i] <= '9')
+		{
+			result = result * 10;
+			result = result - (s[i] - '0');
+			boolean = 1;
+		}
+		else if (boolean == 1)
+			break;
+		i++;
 	}
-	_putchar('\n');
-	return (0);
+	result = result * neg;
+	return (result);
 }
