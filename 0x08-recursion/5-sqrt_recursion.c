@@ -15,7 +15,7 @@ int _sqrt_recursion(int n)
 }
 
 /**
-  * real_sqrt_recursion - recursion to find natural square
+  * real_sqrt - recursion to find natural square
   * @n: int to equate sqrt
   * @i: iterator
   * Return: square root value
