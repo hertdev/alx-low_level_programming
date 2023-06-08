@@ -9,22 +9,22 @@
   */
 int _sqrt_recursion(int n)
 {
-	int temp, sqrt;
-
-	sqrt = n / 2;
-	temp = 0;
-
 	if (n < 0)
 		return (-1);
-	if (n == 1)
-		return (n);
-	if (n == 17)
-		return (-1);
+	return (real_sqrt(n, 0));
+}
 
-	while (sqrt != temp)
-	{
-		temp = sqrt;
-		sqrt = (n / temp + temp) / 2;
-	}
-	return (sqrt);
+/**
+  * real_sqrt_recursion - recursion to find natural square
+  * @n: int to equate sqrt
+  * @i: iterator
+  * Return: square root value
+  */
+int real_sqrt(int n, int i)
+{
+	if (i * i > n)
+		return (-1);
+	if (i * i == n)
+		return (i);
+	return (real_sqrt(n, i + 1));
 }
