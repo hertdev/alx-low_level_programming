@@ -6,13 +6,8 @@
   * argv: argument count
   * Return: number of argument passed
   */
-int main(int argc, char *argv[])
+int main(int argc, char *argv[] __attribute__((unused)))
 {
-	int i = 0;
-
-	if (argv[i] = i)
-		printf("%d\n", i);
-	else
-		printf("%d\n", argc);
+	printf("%d\n", argc - 1);
 	return (0);
 }
