@@ -6,7 +6,7 @@
   * @argv: argument vector, the array to the arg passed
   * Return: program that prints it name
   */
-int main(int argc, char *argv[])
+int main(int argc __attribute__((unused)), char *argv[])
 {
 	int i = 0;
 
