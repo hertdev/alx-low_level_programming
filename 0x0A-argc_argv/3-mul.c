@@ -22,7 +22,7 @@ int myAtoi(char *s)
   * @argv: argument vector
   * Return: multiplied number
   */
-int main(int argc, char *argv[] __attribute__((unused)))
+int main(int argc, char *argv[])
 {
 	int num, num1, result;
 
