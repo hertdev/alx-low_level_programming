@@ -2,6 +2,21 @@
 #include <stdlib.h>
 
 /**
+  * myAtoi - converts string to integer
+  * @s: string pointer
+  * Return: converted string
+  */
+int myAtoi(char *s)
+{
+	int res = 0;
+	int i;
+
+	for (i = 0; s[i] != '\0'; i++)
+		res = res * 10 + s[i] - '0';
+	return (res);
+}
+
+/**
   * main - program entry point
   * @argc: argument count
   * @argv: argument vector
@@ -18,8 +33,8 @@ int main(int argc, char *argv[])
 	}
 	else
 	{
-		num = atoi(argv[1]);
-		num1 = atoi(argv[2]);
+		num = myAtoi(argv[1]);
+		num1 = myAtoi(argv[2]);
 		result = num * num1;
 		printf("%d\n", result);
 	}
