@@ -1,6 +1,20 @@
 #include <stdio.h>
 #include "main.h"
-#include <stdlib.h>
+
+/**
+  * _atoi - converts string to integer
+  * @s: string pointer
+  * Return: converted string
+  */
+int _atoi(char *s)
+{
+	int res = 0;
+	int i;
+
+	for (i = 0; s[i] != '\0'; i++)
+		res = res * 10 + s[i] - '0';
+	return (res);
+}
 
 /**
   * main - program entry point
@@ -19,8 +33,8 @@ int main(int argc, char *argv[])
 	}
 	else
 	{
-		num = atoi(argv[1]);
-		num1 = atoi(argv[2]);
+		num = _atoi(argv[1]);
+		num1 = _atoi(argv[2]);
 		result = num * num1;
 		printf("%d\n", result);
 	}

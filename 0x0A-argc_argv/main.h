@@ -2,7 +2,6 @@
 #define MAIN_H
 
 int _putchar(int i);
-int main(int argc, char *argv[]);
-int myAtoi(char *s);
+int _atoi(char *s);
 
 #endif
