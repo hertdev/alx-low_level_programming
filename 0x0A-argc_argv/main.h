@@ -3,5 +3,6 @@
 
 int _putchar(int i);
 int main(int argc, char *argv[]);
+int myAtoi(char *s);
 
 #endif
