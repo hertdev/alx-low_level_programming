@@ -1,36 +1,31 @@
 #include "main.h"
 
 /**
- * main - multiply two positive integers
- * num1: first positive integer
- * num2: second positive integer
- * mul: multiply the two integers
- *
- * Return: Multiplication of two numbers
- */
-int main(void)
+  * main - multiply two integers
+  * @argc: argument count
+  * @argv: argument vector
+  * Return: result of multiplied int
+  */
+int main(int argc, char *argv[])
 {
-	int num1, num2, mul;
-
-	num1 = 10;
-	num2 = 98;
-
-	mul = num1 * num2;
-
-	printf("%d\n", mul);
+	int mul, num1, num2;
 
 	if (num1 == '\0' || num2 == '\0')
 	{
 		printf("Error\n");
 		exit(98);
 	}
-	if (isdigit(num1 && num2))
-		printf("%d\n", mul);
-	else
+
+	num1 = atoi(argv[1]);
+	num2 = atoi(argv[2]);
+	mul = num1 * num2;
+
+	printf("%d\n", mul);
+	if (!(isdigit(num1 && num2)))
 	{
 		printf("Error\n");
 		exit(98);
 	}
 
-	return (mul);
+	return (0);
 }
