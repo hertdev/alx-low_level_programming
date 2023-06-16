@@ -1,29 +1,36 @@
 #include "main.h"
 
 /**
-  * main - program entry point
-  * Return: result of multiplied int
-  */
-int main(int argc, char *argv[])
+ * main - multiply two positive integers
+ * num1: first positive integer
+ * num2: second positive integer
+ * mul: multiply the two integers
+ *
+ * Return: Multiplication of two numbers
+ */
+int main(void)
 {
-	int mul, num1, num2;
+	int num1, num2, mul;
 
-	if (argc < 3 || argc > 3)
-	{
-		printf("Error\n");
-		exit(98);
-	}
+	num1 = 10;
+	num2 = 98;
 
-	num1 = atoi(argv[1]);
-	num2 = atoi(argv[2]);
 	mul = num1 * num2;
 
-	if (!(num1 && num2))
+	printf("%d\n", mul);
+
+	if (num1 == '\0' || num2 == '\0')
+	{
+		printf("Error\n");
+		exit(98);
+	}
+	if (isdigit(num1 && num2))
+		printf("%d\n", mul);
+	else
 	{
 		printf("Error\n");
 		exit(98);
 	}
 
-	printf("%d\n", mul);
-	return (0);
+	return (mul);
 }
