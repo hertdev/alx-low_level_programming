@@ -5,6 +5,7 @@
   * @s: memory arrea
   * @b: char to copy
   * @n: number of time to copy
+  * Return: constant bytes in maddress
   */
 char *_memset(char *s, char b, unsigned int n)
 {
